@@ -1,0 +1,8 @@
+<% if @converted_amount %>
+  <h1>Convert <%= @from_currency %> to <%= @to_currency %></h1>
+  <p>1 <%= @from_currency %> equals <%= @converted_amount %> <%= @to_currency %>.</p>
+<% else %>
+  <h1>Error</h1>
+  <p><%= @error_message %></p>
+<% end %>
+<a href="/<%= @from_currency %>">Go back.</a>
